@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.col {
+    margin-top: 50px;
+}
+
+.did {
+    text-decoration-line: line-through;
+}
+
+.row-did {
+    background-color: #28a745;
+}
+
+input[type='checkbox'] {
+    width: 18px;
+    height: 18px;
+    margin-top: 10px;
+}
+td {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+th {
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+tr {
+    transition: opacity .5s linear, background-color .5s;
+}
+
+#info {
+    font-weight: 700;
+    color:#5cb85c;
+    display: none;
+}
+

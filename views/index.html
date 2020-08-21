@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="/statics/styles/style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    <div class="col col-xl-4 offset-xl-4 col-md-6 col-sm-10 offset-md-3 offset-sm-1">
+        <form id="form">
+            <h3>Add Todo</h3>
+            <hr>
+            <div class="form-group">
+                <label for="">Todo:</label>
+                <input id="to-do" class="form-control" placeholder="To do " type="text" required oninvalid="this.setCustomValidity('Please enter to do here')" oninput="this.setCustomValidity('')">
+            </div>
+            <div class="form-group">
+                <label for="">Deadline:</label>
+                <input id="deadline" class="form-control" type="datetime-local">
+            </div>
+            <p id="info">Added</p>
+            <button id="submit" class="btn btn-primary form-control">Add New Todo</button>            
+        </form>     
+    </div>
+    <div id="to-do-list" class="col col-xl-6 offset-xl-3 col-md-10 col-sm-12 offset-md-1 ">
+        <h3 class="text-center">Todos</h3>
+        <hr>
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>checked</th>
+                    <th>Todo</th>
+                    <th>Deadline</th>
+                    <th>Remove</th>
+                </tr>
+                <tbody id="to-do-list-table-body">
+                </tbody>
+            </thead>
+        </table>
+    </div>
+    <script src="../statics/scripts/app.js"></script>
+</body>
+</html>
